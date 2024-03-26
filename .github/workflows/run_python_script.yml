@@ -10,8 +10,7 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
-              with:
-                  persist-credentials: false # 이 줄을 추가합니다
+              
 
             - name: Set up Python
               uses: actions/setup-python@v2
@@ -28,8 +27,8 @@ jobs:
 
             - name: Commit file
               run: |
-                  git config --local user.name 'koorukuroo'
-                  git config --local user.email 'koorukuroo@example.com'
+                  git config --local user.name 'subsub97'
+                  git config --local user.email 'godqhr721@gmail.com'
                   git add naver.txt
                   git commit -m "Add naver.txt"
             - name: Push
