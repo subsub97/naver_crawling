@@ -10,6 +10,8 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
+              with:
+                  persist-credentials: false # 이 줄을 추가합니다
 
             - name: Set up Python
               uses: actions/setup-python@v2
